@@ -1,0 +1,112 @@
+html {
+    min-height: 100%;
+    min-width: 100%;
+    -ms-text-size-adjust: none;
+    background-color: #FFFFFF;
+}
+
+body, div, dl, dt, dd, ul, ol, li, nav,
+h1, h2, h3, h4, h5, h6, pre, code, form,
+fieldset, legend, input, button, textarea,
+p, blockquote, th, td, a {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    background-repeat: no-repeat;
+}
+
+#container {
+	max-width: 1004px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topBar {
+	z-index: 2;
+	min-height: 60px;
+    border-color: #7F7F7F;
+	background-color: #555555;
+	float: left;
+	position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#menuBar {
+	z-index: 3;
+    width: 241px;
+    min-height: 724px;
+    position: relative;
+    /*margin-right: -5px;*/
+    /*margin-left: 100px;*/
+    box-shadow: 5px 2px 6px rgba(127,127,127,0.5);
+    border-color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    color: #7F7F7F;
+    float: left;
+}
+
+#mainContent {
+	z-index: 4;
+	/*position: relative;*/
+	background-color: #FCFCFC;
+	/*float: left;*/
+	width: 682px;
+	margin-top: 20px;
+	/*margin-left: 10px;*/
+	/*margin-left: auto;*/
+    /*margin-right: auto;*/
+	/*min-width: 300px;*/
+	/*margin-right: auto;*/
+}
+
+#topBarContent {
+	color: #FFFFFF;
+	font-family: questrial, sans-serif;
+	z-index: 4;
+	margin-top: 35px;
+    /*position: relative;
+    float: left;*/
+}
+
+.centeredContent {
+	margin-left: 20px;
+	float: left;
+	position: relative;
+}
+
+#bottomContent {
+	z-index: 5;
+	/*position: relative;*/
+	background-color: #FCFCFC;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	/*margin-left: 10px;*/
+}
+
+.browserWidth > * {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+@media screen and (max-width: 400px) {
+   #menuBar { 
+    /*float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;*/
+
+  }
+}
