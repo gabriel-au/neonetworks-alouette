@@ -21,6 +21,10 @@ p, blockquote, th, td, a {
     background-repeat: no-repeat;
 }
 
+p, h1, h2, h3, h4, h5, h6, ol, ul, span.actAsPara {
+    max-height: 1000000px;
+}
+
 #container {
 	max-width: 1004px;
     padding-left: 0px;
@@ -38,6 +42,27 @@ p, blockquote, th, td, a {
 	position: absolute;
     left: 0px;
     right: 0px;
+}
+
+#topBarContainer {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1004px;
+}
+
+#topBarContent {
+	z-index: 4;
+	margin-top: 35px;
+	width: 315px;
+	/*margin-left: 250px;*/
+	float: left;
+	/*position: relative;*/
+	/*margin-right: -10000px;*/
+	left: 251px;
+    /*min-height: 22px;*/
+    position: relative;
+    /*float: left;*/
 }
 
 #menuBar {
@@ -58,30 +83,16 @@ p, blockquote, th, td, a {
 #mainContent {
 	z-index: 4;
 	/*position: relative;*/
-	background-color: #FCFCFC;
+	/*background-color: #FCFCFC;*/
 	/*float: left;*/
 	width: 682px;
-	margin-top: 20px;
+	margin-top: 70px;
 	/*margin-left: 10px;*/
 	/*margin-left: auto;*/
     /*margin-right: auto;*/
 	/*min-width: 300px;*/
 	/*margin-right: auto;*/
-}
-
-#topBarContent {
-	color: #FFFFFF;
-	font-family: questrial, sans-serif;
-	z-index: 4;
-	margin-top: 35px;
-    /*position: relative;
-    float: left;*/
-}
-
-.centeredContent {
-	margin-left: 20px;
-	float: left;
-	position: relative;
+	position: absolute;
 }
 
 #bottomContent {
@@ -94,19 +105,53 @@ p, blockquote, th, td, a {
 	/*margin-left: 10px;*/
 }
 
+#linkSocialMedia {
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    background-size: contain;
+}
+
 .browserWidth > * {
     position: absolute;
     left: 0px;
     right: 0px;
 }
 
-@media screen and (max-width: 400px) {
+.topContentTitle {
+	color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: questrial, sans-serif;
+    font-weight: 400;
+    /*position: absolute;*/
+}
+
+.mainContentCentered {
+	float: left;
+	position: absolute;
+	margin-left: 255px;
+}
+
+.linkSocialMediaFacebook {
+	background: transparent url("../images/icon_fb_white.png") no-repeat center center;
+}
+
+.test {
+	display: inline;
+}
+
+/*@media screen and (max-width: 400px) {
    #menuBar { 
-    /*float: none;
+    float: none;
     margin-right:0;
     width:auto;
     border:0;
-    border-bottom:2px solid #000;*/
+    border-bottom:2px solid #000;
 
   }
-}
+}*/

@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.wix.com	TRUE	/	FALSE	1999999999	_wixCIDX	f9edc68d-a0da-42d7-b506-ccd25d2191da
+.wix.com	TRUE	/	FALSE	1999999999	_wix_browser_sess	1c76c454-2511-4b7c-a790-439a23bb58b9
+.wix.com	TRUE	/	FALSE	1999999999	_wixUIDX	null-user-id
+.wix.com	TRUE	/	FALSE	1999999999	userType	ANONYMOUS
+www.alouette.com.au	TRUE	/	FALSE	1999999999	hs	-701100218
+www.alouette.com.au	TRUE	/	FALSE	1999999999	svSession	ad961cf6de8c2a2c13c5d0eacaedfbbb420c16072d8fe4477831fc6b2d13a7c59b99ce42bd535a13da7ca55dbecf40d41e60994d53964e647acf431e4f798bcdbc8090c4de1def48311f50a9c0f534c9a2fa7df94e28a6b5b80b6a4bb94626a5
+.wix.com	TRUE	/	FALSE	1999999999	_wixAB3	16609#2
+
