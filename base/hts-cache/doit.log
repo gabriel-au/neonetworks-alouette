@@ -1,5 +1,5 @@
-www.alouette.com.au
-File generated automatically on Fri, 26 Aug 2016 11:32:47, do NOT edit
+www.alouette.com.au +*.alouette.com.br/* -v
+File generated automatically on Fri, 26 Aug 2016 15:48:12, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)
