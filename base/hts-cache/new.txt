@@ -1,5 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-15:48:13	492/492	U--M--	200	updated ('OK')	text/plain	date:Fri,%2026%20Aug%202016%2005:48:13%20GMT	http://www.alouette.com.au/robots.txt		(from )
-15:48:14	18049/18049	U--M-Z	200	updated ('OK')	text/html	date:Fri,%2026%20Aug%202016%2005:48:14%20GMT	http://www.alouette.com.au/	www.alouette.com.au/index.html	(from )
-15:48:14	2085/2085	---M-Z	200	added ('OK')	text/xml	date:Mon,%2020%20Jul%202015%2003:18:49	http://www.alouette.com.au/sitemap.xml	www.alouette.com.au/sitemap.xml	(from http://www.alouette.com.au/)
-15:48:15	3098/3098	---M-Z	404	error ('Not%20Found')	text/html	date:Fri,%2026%20Aug%202016%2005:48:15%20GMT	http://www.alouette.com.au/feed.xml	www.alouette.com.au/feed.html	(from http://www.alouette.com.au/)

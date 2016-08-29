@@ -45,8 +45,21 @@ li a {
     border-bottom: 1px solid #9F9F9F;
 }
 
-/* Change the link color on hover */
 li a:hover {
+    color: #8CC63F;
+}
+
+a { 
+    /*font-size: 11px;*/
+    /*text-align: center;*/
+    display: block;
+    color: unset;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    /*border-bottom: 1px solid #9F9F9F;*/
+}
+
+a:hover {
     color: #8CC63F;
 }
 
@@ -207,7 +220,7 @@ li a:hover {
 
 .slider {
 	color: #8CC63F;
-	font-family: open-sans, sans-serif;
+	font-family: "Fredericka the Great", fantasy; /*open-sans, sans-serif;*/
     font-size: 36px;
     font-weight: 300;
     text-align: center;
@@ -230,14 +243,78 @@ li a:hover {
 
 }
 
+#bottomContainer {
+    max-width: 1155px; /* 1004 */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /*float: left;*/
+    /*position: relative;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+}
+
 #bottomContent {
-	z-index: 5;
-	background-color: #FCFCFC;
-	float: left;
-	width: 100%;
-	margin-top: 10px;
-	/*margin-left: 10px;*/
-	/*position: relative;*/
+    z-index: 5;
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    /*margin-left: 10px;*/
+    /*position: relative;*/
+}
+
+#bottomContentTitle {
+    z-index: 5;
+    float: left;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    /*margin-top: 70px;*/
+    /*margin-left: 10px;*/
+    /*position: relative;*/
+}
+
+.bottomContentTitleText {
+    color: #8CC63F;
+    font-family: "Fredericka the Great", fantasy; /*open-sans, sans-serif;*/
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#bottomBar {
+    z-index: 5;
+    display: flex;
+    border-color: #7F7F7F;
+    background-color: #555555;
+    float: left;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    /*text-align: center;*/
+}
+
+.bottomBarText {
+    color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0px;
+    font-size: 13px;
+    font-family: questrial, sans-serif;
+    font-weight: 400;
+    /*float: left;*/
+    margin: auto;
+    /*width: 33%; */
+    /*position: relative;*/
+}
+
+.bottomBarTextTitle {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .test {
