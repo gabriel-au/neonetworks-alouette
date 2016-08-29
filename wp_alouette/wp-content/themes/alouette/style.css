@@ -1,3 +1,17 @@
+/*
+Theme Name: Alouette Child Care
+Theme URI: http://www.alouette.com.au
+Description: ...
+
+Author: Neonetworks
+Author URI: http://www.neonetwors.com.au
+Version: 1.0.0
+Tags: light, three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
+
+License: GNU/GPL Version 2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
 html {
     min-height: 100%;
     min-width: 100%;
@@ -138,16 +152,16 @@ a:hover {
 }
 
 .linkSocialMediaFB {
-	background: url("../images/icon_fb_white.png");
+	background: url("images/icon_fb_white.png");
 	/*background: transparent url("../images/icon_fb_white.png") no-repeat center center;*/
 }
 
 .linkSocialMediaTW {
-	background: url("../images/icon_twitter_white.png");
+	background: url("images/icon_twitter_white.png");
 }
 
 .linkSocialMediaLDN {
-	background: url("../images/icon_linked_white.png");
+	background: url("images/icon_linked_white.png");
 }
 
 #menuBar {
@@ -244,7 +258,7 @@ a:hover {
 #mainContentBody {
 	margin-top: 20px;
 	height: 400px;
-	background: transparent url("../images/img_main_page.jpg") no-repeat center center;
+	background: transparent url("images/img_main_page.jpg") no-repeat center center;
 
 }
 
@@ -252,7 +266,7 @@ a:hover {
     margin-top: 20px;
     margin-left: 20px;
     height: 400px;
-    background: transparent url("../images/childcare_01.jpg") no-repeat center center;
+    background: transparent url("images/childcare_01.jpg") no-repeat center center;
 
 }
 
@@ -336,7 +350,7 @@ a:hover {
 
 @font-face {
     font-family: "Fredericka the Great";
-    src: url("../fonts/FrederickatheGreat-Regular.ttf");
+    src: url("fonts/FrederickatheGreat-Regular.ttf");
 }
 
 /*.browserWidth > * {

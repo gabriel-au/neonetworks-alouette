@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<title>Allouette Child Care</title>
-		<link rel="stylesheet" type="text/css" href="css/editor-style.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
+		<?php wp_head(); ?>
 	</head>
 	<body>
 		<!-- MAIN DIV START -->
@@ -28,7 +29,7 @@
 				<div id="menuBar">
 					<!-- MENU BAR LOGO START -->
 					<div id="menuBarLogo">
-						<img class="menuBarLogoImg" src="../images/logo_alouette.png">
+						<img class="menuBarLogoImg" src="<?php bloginfo('template_directory');?>/images/logo_alouette.png">
 					</div>
 					<div id="menuBarLogoSubtitle">Alouette Child Care</div>
 					<!-- MENU BAR LOGO END -->
@@ -70,14 +71,15 @@
 						<p class="bottomContentTitleText">inspiring young minds</p>
 					</div>
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quasi ego id curem, quid ille aiat aut neget. Sed ut iis bonis erigimur, quae expectamus, sic laetamur iis, quae recordamur. Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Bonum valitudo: miser morbus. Duo Reges: constructio interrete. Quid sequatur, quid repugnet, vident. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Sed in rebus apertissimis nimium longi sumus. </p></br>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quasi ego id curem, quid ille aiat aut neget. Sed ut iis bonis erigimur, quae expectamus, sic laetamur iis, quae recordamur. Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Bonum valitudo: miser morbus. Duo Reges: constructio interrete. Quid sequatur, quid repugnet, vident. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Sed in rebus apertissimis nimium longi sumus. </p></br>
 						<p>Quid censes in Latino fore? Tibi hoc incredibile, quod beatissimum. Rationis enim perfectio est virtus; Sed quid attinet de rebus tam apertis plura requirere? Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Quamquam id quidem licebit iis existimare, qui legerint. </p></br>
 
 						<p>Quis est tam dissimile homini. Propter nos enim illam, non propter eam nosmet ipsos diligimus. Quantum Aristoxeni ingenium consumptum videmus in musicis? Sed ne, dum huic obsequor, vobis molestus sim. Odium autem et invidiam facile vitabis. Virtutis, magnitudinis animi, patientiae, fortitudinis fomentis dolor mitigari solet. </p></br>
 
 						<p>Quae animi affectio suum cuique tribuens atque hanc, quam dico. Hoc tu nunc in illo probas. Illis videtur, qui illud non dubitant bonum dicere -; Summum a vobis bonum voluptas dicitur. Ut necesse sit omnium rerum, quae natura vigeant, similem esse finem, non eundem. At enim hic etiam dolore. Cur post Tarentum ad Archytam? </p></br>
 
-						<p>Negat esse eam, inquit, propter se expetendam. Nihil opus est exemplis hoc facere longius. Cur, nisi quod turpis oratio est? Quae ista amicitia est? Praeclare hoc quidem. Quid autem habent admirationis, cum prope accesseris? </p></br>
+						<p>Negat esse eam, inquit, propter se expetendam. Nihil opus est exemplis hoc facere longius. Cur, nisi quod turpis oratio est? Quae ista amicitia est? Praeclare hoc quidem. Quid autem habent admirationis, cum prope accesseris? </p></br> -->
 					</div>
 					<div style="margin-top:10px;">
 						<iframe width="955" height="500" src="https://www.youtube.com/embed/pq8st0SNvew" frameborder="0" allowfullscreen></iframe>
@@ -110,5 +112,6 @@
 			</div>
 		</div>
 		<!-- MAIN DIV END -->
+		<?php wp_footer(); ?>
 	</body>
 </html>
