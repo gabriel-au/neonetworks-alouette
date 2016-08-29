@@ -70,6 +70,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     /*height: 100%;*/
+    display: flex;
 }
 
 #topBar {
@@ -152,7 +153,7 @@ a:hover {
 #menuBar {
 	z-index: 3;
     width: 241px;
-    min-height: 724px;
+    max-height: 724px;
     position: relative;
     box-shadow: 5px 2px 6px rgba(127,127,127,0.5);
     border-color: #000000;
@@ -247,6 +248,14 @@ a:hover {
 
 }
 
+#mainContentBodySecond {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 400px;
+    background: transparent url("../images/childcare_01.jpg") no-repeat center center;
+
+}
+
 #bottomContainer {
     max-width: 1155px; /* 1004 */
     padding-left: 0px;
@@ -263,7 +272,7 @@ a:hover {
     z-index: 5;
     float: left;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     /*margin-left: 10px;*/
     /*position: relative;*/
 }
