@@ -41,7 +41,7 @@ p, h1, h2, h3, h4, h5, h6, ol, ul, span.actAsPara {
     max-height: 1000000px;
 }
 
-ul {
+ul.menu {
     list-style-type: none;
     margin: auto;
     padding: 0px;
@@ -56,10 +56,19 @@ li a {
     color: #9F9F9F;
     padding: 14px 16px;
     text-decoration: none;
-    border-bottom: 1px solid #9F9F9F;
+    border-top: 1px solid #9F9F9F;
+    text-transform: uppercase;
+}
+
+li:first-child a { 
+    border-top: none;
 }
 
 li a:hover {
+    color: #8CC63F;
+}
+
+.current_page_item a {
     color: #8CC63F;
 }
 
@@ -167,7 +176,7 @@ a:hover {
 #menuBar {
 	z-index: 3;
     width: 241px;
-    max-height: 724px;
+    min-height: 724px;
     position: relative;
     box-shadow: 5px 2px 6px rgba(127,127,127,0.5);
     border-color: #000000;
@@ -212,8 +221,8 @@ a:hover {
 #mainContent {
 	z-index: 4;
 	width: 682px;
-	margin-top: 70px;
-    margin-left: 20px;
+	margin-top: 60px;
+    margin-left: 30px;
     position: relative;
     float: left;
 	/*position: absolute;*/
@@ -256,10 +265,16 @@ a:hover {
 }
 
 #mainContentBody {
-	margin-top: 20px;
-	height: 400px;
-	background: transparent url("images/img_main_page.jpg") no-repeat center center;
+	margin-top: 10px;
+	/*height: 400px;*/
+	/*background: transparent url("images/img_main_page.jpg") no-repeat center center;*/
 
+}
+
+img.size-full {
+    height: auto;
+    width: 682px;
+    margin-bottom: 20px;
 }
 
 #mainContentBodySecond {
