@@ -69,6 +69,7 @@ a:hover {
     padding-right: 0px;
     margin-left: auto;
     margin-right: auto;
+    /*height: 100%;*/
 }
 
 #topBar {
@@ -197,7 +198,10 @@ a:hover {
 	z-index: 4;
 	width: 682px;
 	margin-top: 70px;
-	position: absolute;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+	/*position: absolute;*/
 	/*position: relative;*/
 	/*background-color: #FCFCFC;*/
 	/*float: left;*/
@@ -208,11 +212,11 @@ a:hover {
 	/*margin-right: auto;*/
 }
 
-.mainContentCentered {
+/*.mainContentCentered {
 	float: left;
 	position: absolute;
 	margin-left: 260px;
-}
+}*/
 
 #mainContentSlider {
 	margin-top: 10px;
@@ -259,7 +263,7 @@ a:hover {
     z-index: 5;
     float: left;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 20px;
     /*margin-left: 10px;*/
     /*position: relative;*/
 }
@@ -283,7 +287,7 @@ a:hover {
     font-weight: 300;
     text-align: center;
     padding: 0px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     margin-bottom: 40px;
 }
 
