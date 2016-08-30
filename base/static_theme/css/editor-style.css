@@ -1,0 +1,357 @@
+html {
+    min-height: 100%;
+    min-width: 100%;
+    -ms-text-size-adjust: none;
+    background-color: #FFFFFF;
+    font-family: raleway, sans-serif;
+    color: #7F7F7F;
+}
+
+body, div, dl, dt, dd, ul, ol, li, nav,
+h1, h2, h3, h4, h5, h6, pre, code, form,
+fieldset, legend, input, button, textarea,
+p, blockquote, th, td, a {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    background-repeat: no-repeat;
+}
+
+p, h1, h2, h3, h4, h5, h6, ol, ul, span.actAsPara {
+    max-height: 1000000px;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    width: 60%;
+    background-color: #FFFFFF;
+}
+
+li a {
+	font-size: 11px;
+	text-align: center;
+    display: block;
+    color: #9F9F9F;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #9F9F9F;
+}
+
+li a:hover {
+    color: #8CC63F;
+}
+
+a {
+    /*font-size: 11px;*/
+    /*text-align: center;*/
+    display: block;
+    color: unset;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    /*border-bottom: 1px solid #9F9F9F;*/
+}
+
+a:hover {
+    color: #8CC63F;
+}
+
+#container {
+	max-width: 955px; /* 1004 */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 100%;*/
+    display: flex;
+}
+
+#topBar {
+	z-index: 2;
+	min-height: 50px;
+    border-color: #7F7F7F;
+	background-color: #555555;
+	float: left;
+	position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#topBarContainer {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 955px;
+}
+
+#topBarContent {
+	z-index: 4;
+	margin-top: 18px;
+	width: 315px;
+	float: left;
+	left: 255px;
+	position: relative;
+	/*margin-left: 250px;*/
+	/*position: relative;*/
+	/*margin-right: -10000px;*/
+    /*min-height: 22px;*/
+    /*float: left;*/
+}
+
+.topContentTitle {
+	color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: questrial, sans-serif;
+    font-weight: 400;
+    /*position: absolute;*/
+}
+
+#linkSocialMedia {
+	z-index: 115;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin-top: 14px;
+    left: 500px;
+    float: left;
+    /*background: url("../images/icon_fb_white.png");*/
+    /*-webkit-transition-duration: 1s;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    background-size: contain;*/
+    /* other css */
+    /*margin-bottom: -1px;*/
+    /*margin-right: -10000px;*/
+    /*display: block;*/
+}
+
+.linkSocialMediaFB {
+	background: url("../images/icon_fb_white.png");
+	/*background: transparent url("../images/icon_fb_white.png") no-repeat center center;*/
+}
+
+.linkSocialMediaTW {
+	background: url("../images/icon_twitter_white.png");
+}
+
+.linkSocialMediaLDN {
+	background: url("../images/icon_linked_white.png");
+}
+
+#menuBar {
+	z-index: 3;
+    width: 241px;
+    max-height: 724px;
+    position: relative;
+    box-shadow: 5px 2px 6px rgba(127,127,127,0.5);
+    border-color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    color: #7F7F7F;
+    float: left;
+    /*margin-right: -5px;*/
+    /*margin-left: 100px;*/
+}
+
+#menuBarLogo {
+	margin-top: 70px;
+	display: flex;
+	/*padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.menuBarLogoImg {
+	width: 200px;
+	height: auto;
+	margin: auto;
+}
+
+#menuBarLogoSubtitle {
+	margin-top: 10px;
+	font-family: "Fredericka the Great", fantasy;
+	line-height: 1.1em;
+	text-align: center;
+    letter-spacing: normal;
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
+}
+
+#menuBarList {
+	margin-top: 50px;
+}
+
+#mainContent {
+	z-index: 4;
+	width: 682px;
+	margin-top: 70px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+	/*position: absolute;*/
+	/*position: relative;*/
+	/*background-color: #FCFCFC;*/
+	/*float: left;*/
+	/*margin-left: 10px;*/
+	/*margin-left: auto;*/
+    /*margin-right: auto;*/
+	/*min-width: 300px;*/
+	/*margin-right: auto;*/
+}
+
+/*.mainContentCentered {
+	float: left;
+	position: absolute;
+	margin-left: 260px;
+}*/
+
+#mainContentSlider {
+	margin-top: 10px;
+}
+
+.slider {
+	color: #8CC63F;
+	font-family: "Fredericka the Great", fantasy; /*open-sans, sans-serif;*/
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
+}
+
+.sliderSubtitle {
+    color: #5F5F5F;
+    font-family: open-sans, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px;
+}
+
+#mainContentBody {
+	margin-top: 20px;
+	height: 400px;
+	background: transparent url("../images/img_main_page.jpg") no-repeat center center;
+
+}
+
+#mainContentBodySecond {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 400px;
+    background: transparent url("../images/childcare_01.jpg") no-repeat center center;
+
+}
+
+#bottomContainer {
+    max-width: 1155px; /* 1004 */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /*float: left;*/
+    /*position: relative;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+}
+
+#bottomContent {
+    z-index: 5;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    /*margin-left: 10px;*/
+    /*position: relative;*/
+}
+
+#bottomContentTitle {
+    z-index: 5;
+    float: left;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    /*margin-top: 70px;*/
+    /*margin-left: 10px;*/
+    /*position: relative;*/
+}
+
+.bottomContentTitleText {
+    color: #8CC63F;
+    font-family: "Fredericka the Great", fantasy; /*open-sans, sans-serif;*/
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
+    /*margin-top: 30px;*/
+    margin-bottom: 40px;
+}
+
+#bottomBar {
+    z-index: 5;
+    display: flex;
+    border-color: #7F7F7F;
+    background-color: #555555;
+    float: left;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    /*text-align: center;*/
+}
+
+.bottomBarText {
+    color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0px;
+    font-size: 13px;
+    font-family: questrial, sans-serif;
+    font-weight: 400;
+    /*float: left;*/
+    margin: auto;
+    /*width: 33%; */
+    /*position: relative;*/
+}
+
+.bottomBarTextTitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.test {
+	display: inline;
+}
+
+@font-face {
+    font-family: "Fredericka the Great";
+    src: url("../fonts/FrederickatheGreat-Regular.ttf");
+}
+
+/*.browserWidth > * {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}*/
+
+/*@media screen and (max-width: 400px) {
+   #menuBar {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;
+
+  }
+}*/
