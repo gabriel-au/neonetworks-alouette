@@ -1,15 +1,15 @@
 <?php
 /* Template Name: Custom Template
-MultiEdit: Subcontent,Right,Bottom,Left
+MultiEdit: MenuContent,Right,Bottom,Left
 */
 ?>
-<html>
+<!-- <html>
 	<head>
-		<title>Allouette Child Care</title>
+		<title>Allouette Child Care</title> -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
 		<?php wp_head(); ?>
-	</head>
-	<body>
+	<!-- </head>
+	<body> -->
 		<!-- MAIN DIV START -->
 		<div>
 			<!-- CONTAINER SECTION - MAIN CONTENT START -->
@@ -33,29 +33,54 @@ MultiEdit: Subcontent,Right,Bottom,Left
 					<!-- TOP BAR CONTAINER END -->
 				</div>
 				<!-- TOP BAR END -->
-				<!-- MENU BAR START -->
-				<div id="menuBar">
-					<!-- MENU BAR LOGO START -->
-					<div id="menuBarLogo">
-						<?php mytheme_custom_logo(); ?>
-					</div>
-					<!-- <div id="menuBarLogoSubtitle">Alouette Child Care</div> -->
-					<!-- MENU BAR LOGO END -->
-					<!-- MENU BAR LIST START -->
-					<div id="menuBarList">
-						<div id="menuwrapper">
-							<ul>
-								<!-- <li><a href="#" style="border-top: none;">HOME</a></li> -->
-								<?php wp_list_pages( '&title_li='); ?>
-								
-							</ul>
+				<div id="containerMenu">
+					<!-- MENU BAR START -->
+					<div id="menuBar">
+						<!-- MENU BAR LOGO START -->
+						<div id="menuBarLogo">
+							<?php mytheme_custom_logo(); ?>
 						</div>
+						<!-- <div id="menuBarLogoSubtitle">Alouette Child Care</div> -->
+						<!-- MENU BAR LOGO END -->
+						<!-- MENU BAR LIST START -->
+						<div id="menuBarList">
+							<div id="menuwrapper">
+								<ul>
+									<!-- <li><a href="#" style="border-top: none;">HOME</a></li> -->
+									<?php wp_list_pages( '&title_li='); ?>
+									
+								</ul>
+							</div>
+						</div>
+						<div id="menuBarContentTop">
+							<?php multieditDisplay('MenuContent'); ?>
+						</div>
+						<!-- MENU BAR LIST END -->
 					</div>
-					<!-- MENU BAR LIST END -->
+					<!-- MENU BAR END -->
+					<!-- MENU BAR CONTENT START -->
+					<?php 
+						$output = multieditDisplay('Left', true);
+
+						if (trim($output) != "") {
+							$contentVal = substr($output, 0, 2);
+
+							echo '<div id="menuBarContentBottom">';
+
+							if (trim($contentVal) == "<p" || trim($contentVal) == "<h") {
+								echo '<div class="contentText">';
+								echo $output;
+								echo '</div>';
+							} else {
+								echo $output;
+							}
+
+							echo '</div>';
+						}
+					?>
+					<!-- MENU BAR CONTENT END -->
 				</div>
-				<!-- MENU BAR END -->
 				<!-- MAIN CONTENT START -->
-				<!-- <div>Test</div> -->
 				<div id="mainContent">
 					<?php mytheme_post_thumbnail(); ?>
 
@@ -76,35 +101,10 @@ MultiEdit: Subcontent,Right,Bottom,Left
 			</div>
 			<div id="container">
 				<div id="bottomContent">
-					<?php multieditDisplay('Subcontent'); ?>
+					<?php multieditDisplay('Bottom'); ?>
 				</div>
 			</div>
-			<!-- CONTAINER SECTION - BOTTOM CONTENT END -->
-			<!-- CONTAINER SECTION - BOTTOM CONTENT END -->
-			<div id="bottomContainer">
-				<div id="bottomBar">
-					<div id="bottomContent">
-						<p class="bottomBarText bottomBarTextTitle">ALOUETTE CHILDCARE - CROW NEST</p>
-						<p class="bottomBarText">3 Rodborough Ave, Crows Nest, NSW 2065</p>
-						<p class="bottomBarText">P (02) 8203 4550 / F (02) 9667 0518</p>
-						<p class="bottomBarText"><a href="mailto:info@alouette.com.au">info@alouette.com.au</a></p>
-					</div>
-					<div id="bottomContent">
-						<p class="bottomBarText bottomBarTextTitle">ALOUETTE CHILDCARE - EAST LAKES</p>
-						<p class="bottomBarText">4 Florence Ave, Eastlakes, NSW 2018</p>
-						<p class="bottomBarText">P (02) 8203 4550 / F (02) 9667 0518</p>
-						<p class="bottomBarText"><a href="mailto:info@alouette.com.au">info@alouette.com.au</a></p>
-					</div>
-					<div id="bottomContent">
-						<p class="bottomBarText bottomBarTextTitle">ALOUETTE CHILDCARE - CHIFLEY</p>
-						<p class="bottomBarText">65 Macquarie St, Chifley, NSW 2036</p>
-						<p class="bottomBarText">P (02) 8203 4550 / F (02) 9667 0518</p>
-						<p class="bottomBarText"><a href="mailto:info@alouette.com.au">info@alouette.com.au</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- MAIN DIV END -->
-		<?php wp_footer(); ?>
+			<!-- PAGE.PHP -->
+		<?php get_footer()(); ?>
 	</body>
 </html>

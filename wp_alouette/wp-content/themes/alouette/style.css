@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Alouette Child Care
 Theme URI: http://www.alouette.com.au
 Description: ...
@@ -53,6 +53,7 @@ textarea {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1.6;
+    margin:0px;
 }
 
 h1,
@@ -235,111 +236,6 @@ dd {
     margin-bottom: 1.6em;
 }
 
-/*body, div, dl, dt, dd, ul, ol, li, nav,
-h1, h2, h3, h4, h5, h6, pre, code, form,
-fieldset, legend, input, button, textarea,
-p, blockquote, th, td, a {
-    margin: 0px;
-    padding: 0px;
-    border-width: 0px;
-    border-style: solid;
-    border-color: transparent;
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    -o-transform-origin: left top;
-    transform-origin: left top;
-    background-repeat: no-repeat;
-}*/
-
-/*p, h1, h2, h3, h4, h5, h6, ol, ul, span.actAsPara {
-    max-height: 1000000px;
-}*/
-
-/*ul.menu {
-    list-style-type: none;
-    margin: auto;
-    padding: 0px;
-    width: 60%;
-    background-color: #FFFFFF;
-}
-
-ul.children {
-    visibility: hidden;
-}
-
-li a { 
-    display: block;
-	font-size: 11px;
-	text-align: center;
-    color: #9F9F9F;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-top: 1px solid #9F9F9F;
-    text-transform: uppercase;
-}
-
-li:first-child a { 
-    border-top: none;
-}
-
-li a:hover {
-    color: #8CC63F;
-}*/
-
-/*#menu {
-    overflow: auto;
-    position: relative;
-    z-index: 99999;
-}
-
-.parent-menu {
-    background-color: #0c8fff;
-    min-width: 200px;
-    float: left;
-}
-
-#menu ul {
-    list-style-type: none;
-}
-
-#menu ul li a {
-    padding: 10px 15px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-}
-
-#menu ul li a:hover {
-    background-color: #007ee9;
-}
-
-#menu ul li:hover > ul {
-    left: 200px;
-    -webkit-transition: left 200ms ease-in;
-    -moz-transition: left 200ms ease-in;
-    -ms-transition: left 200ms ease-in;
-    transition: left 200ms ease-in;
-    z-index: 99998;
-}
-
-#menu ul li > ul {
-    position: absolute;
-    background-color: #333;
-    top: 0;
-    left: -200px;
-    min-width: 200px;
-    z-index: -1;
-    height: 100%;
-    -webkit-transition: left 200ms ease-in;
-    -moz-transition: left 200ms ease-in;
-    -ms-transition: left 200ms ease-in;
-    transition: left 200ms ease-in;
-}
-
-#menu ul li > ul li a:hover {
-    background-color: #2e2e2e;
-}*/
-
 div #menuwrapper {
     margin: auto;
     padding: 0px;
@@ -357,9 +253,13 @@ div #menuwrapper {
 /* We apply background color and border bottom white and width to 150px */
 #menuwrapper ul li{
     background-color:#FFFFFF;
-    border-top:solid 1px white;
+    border-top:solid 1px #FAFAFA;
     /*width:150px;*/
     cursor:pointer;
+}
+
+#menuwrapper ul li ul li {
+    /*width: 120px;*/
 }
 
 /* We apply the background hover color when user hover the mouse over of the li component */
@@ -381,7 +281,11 @@ div #menuwrapper {
     text-decoration:none;
 }
 
-#menuwrapper ul li:first-child a { 
+#menuwrapper ul li a:hover{
+    color: #8CC63F;
+}
+
+#menuwrapper ul li:first-child, #menuwrapper ul li:first-child a { 
     border-top: none;
 }
 
@@ -395,7 +299,7 @@ div #menuwrapper {
 /* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
 #menuwrapper ul li:hover ul{
     left:150px;
-    top:0px;
+    top:1px;
     display:block;
 }
 
@@ -415,14 +319,14 @@ div #menuwrapper {
 #menuwrapper ul li ul li a{
     color:#9F9F9F;
     display:inline-block;
-    width:120px;
+    width:150px;
 }
 
 /**** THIRD LEVEL MENU ****/
 /* We need to hide the 3rd menu, when hovering the first level menu */
 #menuwrapper ul li:hover ul li ul{
     position:absolute;
-    display:none;
+    display:none;  
 }
 
 /* We show the third level menu only when they hover the second level menu parent */
@@ -453,8 +357,9 @@ div #menuwrapper {
     clear:both;
 }
 
-.current_page_item a {
+#menuwrapper ul li.current_page_item a {
     color: #8CC63F;
+    font-weight: bold;
 }
 
 a { 
@@ -483,7 +388,7 @@ a:hover {
 
 #topBar {
 	z-index: 2;
-	min-height: 50px;
+	min-height: 55px;
     border-color: #7F7F7F;
 	background-color: #555555;
 	float: left;
@@ -501,7 +406,7 @@ a:hover {
 
 #topBarContent {
 	z-index: 1;
-	margin-top: 18px;
+	margin-top: 0px;
 	width: 315px;
 	float: left;
 	left: 255px;
@@ -559,6 +464,18 @@ a:hover {
 	background: url("images/icon_linked_white.png");
 }
 
+#containerMenu {
+    max-width: 741px; /* 1004 */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
 #menuBar {
 	z-index: 3;
     width: 241px;
@@ -604,6 +521,45 @@ a:hover {
 
 #menuBarList {
 	margin-top: 20px;
+}
+
+#menuBarContentTop {
+    /*margin: 20px 10px 20px 10px;*/
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+}
+
+#menuBarContentBottom {
+    z-index: 3;
+    width: 241px;
+    margin-top: 30px;
+    /*padding: 10px;*/
+    /*height: 724px;*/
+    /*min-height: 724px;*/
+    /*max-height: 924px;*/
+    position: relative;
+    /*box-shadow: 5px 2px 6px rgba(127,127,127,0.5);*/
+    /*border-color: #000000;*/
+    /*background-color: #88C68B;*/
+    /*border-radius: 10px 10px 10px 10px;*/
+    color: #FFFFFF;
+    float: left;
+    /*z-index: 3;
+    width: 241px;
+    position: relative;
+    background-color: #FFFFFF;
+    color: #7F7F7F;
+    float: left;
+    margin-top: 20px;
+    margin-right: -5px;
+    margin-left: 100px;*/
+}
+
+/*#menuBarContentBottom > div. {*/
+div.contentText {
+    padding: 20px;
+    background-color: #88C68B;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #mainContent {
@@ -653,7 +609,7 @@ a:hover {
 }
 
 #mainContentBody {
-	margin-top: 10px;
+	margin-top: 20px;
 	/*height: 400px;*/
 	/*background: transparent url("images/img_main_page.jpg") no-repeat center center;*/
 
@@ -664,6 +620,36 @@ a:hover {
     width: 682px;
     margin-bottom: 20px;
 }*/
+
+#mainContentBody h1,
+#mainContentBody h2,
+#mainContentBody h3,
+#mainContentBody h4,
+#mainContentBody h5,
+#mainContentBody h6 {
+    color: #8CC63F;
+    font-family: "Fredericka the Great", fantasy;
+    font-size: 36px;
+}
+
+#mainContentBody h3.title {
+    color: #FFFFFF;
+    font-family: unset;
+    font-size: unset;
+}
+
+#mainContentBody div.squareDemo {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+#mainContentBody h2 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 img.aligncenter {
     margin-left: auto;
@@ -708,6 +694,38 @@ img.aligncenter {
     /*position: relative;*/
 }
 
+#bottomContentBar {
+    /*color: #9F9F9F;*/
+    line-height: 27px;
+    letter-spacing: 0px;
+    font-family: questrial, sans-serif;
+    font-weight: 400;
+    /*float: left;*/
+    margin: auto;
+    margin-top: 20px;
+    /*z-index: 5;
+    float: left;
+    width: 100%;
+    margin-top: 30px;*/
+    /*margin-left: 10px;*/
+    /*position: relative;*/
+}
+
+#bottomContentBar h1,
+#bottomContentBar h2,
+#bottomContentBar h3,
+#bottomContentBar h4,
+#bottomContentBar h5,
+#bottomContentBar h6,
+#bottomContentBar p {
+    color: #FFFFFF;
+}
+
+#bottomContentBar p {
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+
 #bottomContentTitle {
     z-index: 5;
     float: left;
@@ -733,13 +751,13 @@ img.aligncenter {
 #bottomBar {
     z-index: 5;
     display: flex;
-
     border-color: #7F7F7F;
     background-color: #555555;
     float: left;
     width: 100%;
-    height: 150px;
+    /*height: 150px;*/
     margin-top: 30px;
+    padding-bottom: 30px;
     /*text-align: center;*/
 }
 
@@ -756,8 +774,20 @@ img.aligncenter {
     font-size: 14px;
 }
 
-.test {
-	display: inline;
+.contactInfo { 
+    margin-left: 20px;
+    font-size: 12px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+
+iframe.map {
+    width: unset;
+    height: 300px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 p > iframe {
@@ -765,6 +795,18 @@ p > iframe {
     /*max-height: 100%;*/
     height: 70%;
 }
+
+div.squareDemo {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/*div#menuBarContentBottom < div#square_production_pages_link_1715612 {
+    background-color: #FFFFFF;
+    border-radius: 0px;
+}*/
 
 @font-face {
     font-family: "Fredericka the Great";
@@ -786,4 +828,4 @@ p > iframe {
     border-bottom:2px solid #000;
 
   }
-}*/
+}

@@ -14,12 +14,13 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'amalie' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alouette' ); ?></a>
 
 	<div id="sidebar" class="sidebar">
 		<header id="masthead" class="site-header" role="banner">
@@ -49,4 +50,5 @@
 		<?php get_sidebar(); ?>
 	</div><!-- .sidebar -->
 
-	<div id="content" class="site-content">
+	<!-- MAIN DIV START -->
+	<div>
