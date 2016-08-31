@@ -22,12 +22,35 @@ MultiEdit: MenuContent,Right,Bottom,Left
 						<div id="topBarContent">
 							<p class="topContentTitle">
 								<?php echo get_option('main_phone'); ?>
-								<!-- 1300 ALOUETTE (1300 999 999) -->
 							</p>
 						</div>
-						<a class="linkSocialMediaFB" id="linkSocialMedia" href="<?php echo get_option('facebook'); ?>" target="_blank"></a>
-						<a class="linkSocialMediaTW" id="linkSocialMedia" href="<?php echo get_option('twitter'); ?>" target="_blank"></a>
-						<a class="linkSocialMediaLDN" id="linkSocialMedia" href="<?php echo get_option('instagram'); ?>" target="_blank"></a>
+						<?php
+
+							$output = get_option('facebook');
+
+							if (trim($output) != "") {
+								echo '<a class="linkSocialMediaFB" id="linkSocialMedia" href="';
+								echo $output;
+								echo '" target="_blank"></a>';
+							}
+
+							$output = get_option('twitter');
+
+							if (trim($output) != "") {
+								echo '<a class="linkSocialMediaTW" id="linkSocialMedia" href="';
+								echo $output;
+								echo '" target="_blank"></a>';
+							}
+
+							$output = get_option('instagram');
+
+							if (trim($output) != "") {
+								echo '<a class="linkSocialMediaLDN" id="linkSocialMedia" href="';
+								echo $output;
+								echo '" target="_blank"></a>';
+							}
+
+						?>
 						<!-- TOP BAR TITLE END -->
 					</div>
 					<!-- TOP BAR CONTAINER END -->
