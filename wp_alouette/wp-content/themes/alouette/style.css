@@ -1,4 +1,4 @@
-
+/*
 Theme Name: Alouette Child Care
 Theme URI: http://www.alouette.com.au
 Description: ...
@@ -562,6 +562,12 @@ div.contentText {
     border-radius: 10px 10px 10px 10px;
 }
 
+div#menuBarContentBottom > div.ninja-forms-cont {
+    padding: 20px;
+    background-color: #88C68B; /*#96b6aa;*/
+    border-radius: 10px 10px 10px 10px;
+}
+
 #mainContent {
 	z-index: 2;
 	width: 682px;
@@ -638,17 +644,32 @@ div.contentText {
     font-size: unset;
 }
 
+#mainContentBody h3.arconix-faq-term-title {
+    color: unset;
+    font-family: unset;
+    font-size: unset;
+}
+
 #mainContentBody div.squareDemo {
     float: left;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right: 10px;    
+    margin-right: 10px;
+    background-position: center !important;
+    background-size: cover !important;
 }
 
 #mainContentBody h2 {
     font-size: 36px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#mainContentBody h2.ninja-forms-form-title {
+    font-family: unset;
+    font-size: 16px;
+    color: unset;
+    text-transform: uppercase;
 }
 
 img.aligncenter {
@@ -788,6 +809,132 @@ img.aligncenter {
     margin-bottom: 20px;
 }
 
+#contactBox {
+    z-index: 5;
+    display: flex;
+    background-color: #FFFFFF;
+    float: left;
+    width: 670px;
+    /*height: 200px;*/
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    /*padding-bottom: 30px;*/
+}
+
+#contactBoxText {
+    /*line-height: 27px;*/
+    letter-spacing: 0px;
+    font-family: questrial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    /*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 200px;
+}
+
+#contactBoxText h5 {
+    font-family: unset;
+    color: unset;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.buttonRight {
+    float: right;
+}
+
+.formButton {
+  background: #34d98f;
+  background-image: -webkit-linear-gradient(top, #34d98f, #28a167);
+  background-image: -moz-linear-gradient(top, #34d98f, #28a167);
+  background-image: -ms-linear-gradient(top, #34d98f, #28a167);
+  background-image: -o-linear-gradient(top, #34d98f, #28a167);
+  background-image: linear-gradient(to bottom, #34d98f, #28a167);
+  text-shadow: 1px 1px 1px #666666;
+  /*font-family: Arial;*/
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border: solid #6d9989 1px;
+  text-decoration: none;
+}
+
+.formButton:hover {
+  background: #3beb9c;
+  background-image: -webkit-linear-gradient(top, #3beb9c, #3ad690);
+  background-image: -moz-linear-gradient(top, #3beb9c, #3ad690);
+  background-image: -ms-linear-gradient(top, #3beb9c, #3ad690);
+  background-image: -o-linear-gradient(top, #3beb9c, #3ad690);
+  background-image: linear-gradient(to bottom, #3beb9c, #3ad690);
+  text-decoration: none;
+}
+
+.formTextArea {
+    background:#FFFFFF;
+    /*color:#999999;*/
+    border:1px solid #cccccc;
+    border-radius:0px ;
+    /*font-size:14px ;*/
+    /*width: 300px ;*/
+    padding: 10px ;
+    /*box-shadow: -1px 0px 0px #DCDCDC; 
+    -webkit-box-shadow: -1px 0px 0px #DCDCDC; 
+    -moz-box-shadow: -1px 0px 0px #DCDCDC; */
+}
+
+.formInputText {
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 8px;
+    /*font-size: 14px;*/
+    border-width: 1px;
+    background-color: #ffffff;
+}
+ 
+.formInputText:focus, .formTextArea:focus, .formSelectList:focus {
+    outline: none;
+}
+
+.formInputText, .formTextArea, .formSelectList {
+    font-size: 14px;
+}
+
+.formSelectList {
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 8px;
+    /*font-size: 14px;*/
+    border-width: 1px;
+    background-color: #ffffff;
+    /*background: url('images/icon_select_down_arrow.png') right right / 100% no-repeat transparent;*/
+    background: #ffffff url("images/icon_select_down_arrow.png") no-repeat 99% 50%/18px 18px;
+    border-radius: 0px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.formSelectList option {
+    /*border-color: #cccccc;*/
+    /*border-style: solid;*/
+    padding: 8px;
+    /*font-size: 14px;*/
+    /*border-width: 1px;*/
+    background-color: #ffffff;
+    /*border-radius: 0px;*/
+    border: none;
+    /*overflow: hidden;*/
+}
+
+div.ninja-forms-cont {
+    position: unset;
+}
+
 iframe.map {
     /*width: unset;*/
     height: 300px;
@@ -807,6 +954,8 @@ div.squareDemo {
     margin-bottom: 10px;
     margin-left: 18px;
     margin-right: 18px;
+    background-position: center !important;
+    background-size: cover !important;
 }
 
 /*div#menuBarContentBottom < div#square_production_pages_link_1715612 {

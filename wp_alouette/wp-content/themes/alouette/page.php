@@ -2,6 +2,8 @@
 /* Template Name: Custom Template
 MultiEdit: MenuContent,Right,Bottom,Left
 */
+
+    header('X-Frame-Options: GOFORIT'); 
 ?>
 <!-- <html>
 	<head>
@@ -104,6 +106,7 @@ MultiEdit: MenuContent,Right,Bottom,Left
 					<!-- MENU BAR CONTENT END -->
 				</div>
 				<!-- MAIN CONTENT START -->
+				<!-- TEST -->
 				<div id="mainContent">
 					<?php mytheme_post_thumbnail(); ?>
 
@@ -127,7 +130,6 @@ MultiEdit: MenuContent,Right,Bottom,Left
 					<?php multieditDisplay('Bottom'); ?>
 				</div>
 			</div>
-			<!-- PAGE.PHP -->
 		<?php get_footer()(); ?>
 	</body>
 </html>
