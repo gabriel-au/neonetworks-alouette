@@ -150,6 +150,6 @@ MultiEdit: MenuContent,Right,Bottom,Left
 					<?php multieditDisplay('Bottom'); ?>
 				</div>
 			</div>
-		<?php get_footer()(); ?>
+		<?php get_footer(); ?>
 	</body>
 </html>
