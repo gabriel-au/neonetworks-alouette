@@ -11,7 +11,7 @@
 			width: 150px;
 
 		}
-		#accordion div {
+		#accordion li {
 			display: block;
 			/*background-color: #FF9927;*/
 			/*font-weight: bold;*/
@@ -60,6 +60,48 @@
 </head>
 <body>
 <ul id="accordion">
+    <!-- <li><a href="#" style="border-top: none;">HOME</a></li> -->
+    <li class="page_item page-item-2">
+    	<a href="http://alouette.dev/">HOME</a>
+	</li>
+    <li class="page_item page-item-11 page_item_has_children current_page_item">
+    	<a href="http://alouette.dev/our-centre/">OUR CENTRES</a> <!-- http://alouette.dev/our-centre/ -->
+        <ul class="children">
+            <li class="page_item page-item-58">
+            	<a href="http://alouette.dev/our-centre/crow-nest/">CROW NEST</a>
+        	</li>
+            <li class="page_item page-item-60">
+            	<a href="http://alouette.dev/our-centre/east-lakes/">EAST LAKES</a>
+        	</li>
+            <li class="page_item page-item-62">
+            	<a href="http://alouette.dev/our-centre/chifley/">CHIFLEY</a>
+        	</li>
+        </ul>
+    </li>
+    <li class="page_item page-item-14">
+    	<a href="http://alouette.dev/curriculum/">CURRICULUM</a>
+	</li>
+    <li class="page_item page-item-17">
+    	<a href="http://alouette.dev/healthy-eating/">HEALTHY EATING</a>
+	</li>
+    <li class="page_item page-item-20">
+    	<a href="http://alouette.dev/our-team/">OUR TEAM</a>
+	</li>
+    <li class="page_item page-item-30">
+    	<a href="http://alouette.dev/enrolment-fees-2/">ENROLMENT &amp; FEES</a>
+	</li>
+    <li class="page_item page-item-23">
+    	<a href="http://alouette.dev/enrolment-fees/">FAQS</a>
+	</li>
+    <li class="page_item page-item-27">
+    	<a href="http://alouette.dev/contact-us/">CONTACT US</a>
+	</li>
+    <li class="page_item page-item-232">
+    	<a href="http://alouette.dev/admin/">ADMIN</a>
+	</li>
+</ul>
+
+<!-- <ul id="accordion">
 	<li><div>Sports</div>
 		<ul>
 			<li><a href="#">Golf</a></li>
@@ -81,16 +123,22 @@
 			<li><a href="#">Health Care</a></li>
 		</ul>
 	</li>
-</ul>
+</ul> -->
 </body>
 <script>
-		$("#accordion > li > div").click(function(){
+		$("#accordion > li > a").click(function(){
 			if(false == $(this).next().is(':visible')) {
 				$('#accordion > ul').slideUp(300);
 			}
+			
+			$(this).attr('href', '#');
 			$(this).next().slideToggle(300);
 		});
 
-		$('#accordion > li:eq(0)').show();
+		// $('#accordion > li:eq(0)').show();
+
+		// $( document ).ready(function() {
+		//     alert("The paragraph was clicked.");
+		// });
 	</script>
 </html>

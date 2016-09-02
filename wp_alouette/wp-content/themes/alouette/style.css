@@ -236,128 +236,78 @@ dd {
     margin-bottom: 1.6em;
 }
 
-div #menuwrapper {
+#menu {
     margin: auto;
     padding: 0px;
-    width: 60%;
-}
-
-#menuwrapper ul, #menuwrapper ul li{
-    z-index: 9999;
-    margin:0;
-    padding:0;
     width: 150px;
-    list-style:none;
 }
 
-/* We apply background color and border bottom white and width to 150px */
-#menuwrapper ul li{
-    background-color:#FFFFFF;
-    border-top:solid 1px #FAFAFA;
-    /*width:150px;*/
-    cursor:pointer;
+#menu ul, ol {
+    margin: 0px;
 }
 
-#menuwrapper ul li ul li {
-    /*width: 120px;*/
+#accordion {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    width: 150px;
+
 }
 
-/* We apply the background hover color when user hover the mouse over of the li component */
-#menuwrapper ul li:hover{
-    background-color:#FAFAFA;
-    position:relative;
-    z-index: 99999;
-}
-
-/* We apply the link style */
-#menuwrapper ul li a{
+#accordion li {
+    display: block;
+    /*background-color: #FF9927;*/
+    /*font-weight: bold;*/
+    margin: 1px;
+    cursor: pointer;
+    /*padding: 5px 5px 5px 7px;*/
+    text-align: center;
+    /*list-style: circle;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
     color: #9F9F9F;
     font-size: 11px;
-    text-align: center;
     padding: 14px 16px;
     border-top: 1px solid #9F9F9F;
     text-transform: uppercase;
-    /*display:inline-block;*/
-    text-decoration:none;
 }
 
-#menuwrapper ul li a:hover{
-    color: #8CC63F;
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+
 }
 
-#menuwrapper ul li:first-child, #menuwrapper ul li:first-child a { 
+#accordion ul{
+    display: none;
+
+}
+
+#accordion ul li {
+    font-weight: normal;
+    cursor: auto;
+    background-color: #fff;
+    /*padding: 5px 5px 5px 7px;*/
+    padding: 14px 16px;
+    border-top:solid 1px #9F9F9F;
+    text-align: center;
+
+}
+
+#accordion a {
+    text-decoration: none;
+
+}
+
+#accordion a:hover {
+    text-decoration: none;
+}
+
+#accordion li:first-child {
     border-top: none;
 }
 
-/**** SECOND LEVEL MENU ****/
-/* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
-#menuwrapper ul li ul{
-    position:absolute;
-    display:none;
-}
-
-/* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
-#menuwrapper ul li:hover ul{
-    left:150px;
-    top:1px;
-    display:block;
-}
-
-/* we apply different background color to 2nd level menu items*/
-#menuwrapper ul li ul li{
-    background-color:#FAFAFA;
-
-}
-
-/* We change the background color for the level 2 submenu when hovering the menu */
-#menuwrapper ul li:hover ul li:hover{
-    background-color:#DBE6A9;
-    /*cae25a;*/
-}
-
-/* We style the color of level 2 links */
-#menuwrapper ul li ul li a{
-    color:#9F9F9F;
-    display:inline-block;
-    width:150px;
-}
-
-/**** THIRD LEVEL MENU ****/
-/* We need to hide the 3rd menu, when hovering the first level menu */
-#menuwrapper ul li:hover ul li ul{
-    position:absolute;
-    display:none;  
-}
-
-/* We show the third level menu only when they hover the second level menu parent */
-#menuwrapper ul li:hover ul li:hover ul{
-    display:block;
-    left:150px;
-    top:0;
-}
-
-/* We change the background color for the level 3 submenu*/
-#menuwrapper ul li:hover ul li:hover ul li{
-    background:#86d3fa;
-}
-
-/* We change the background color for the level 3 submenu when hovering the menu */
-
-#menuwrapper ul li:hover ul li:hover ul li:hover{
-    background:#358ebc;
-}
-
-/* We change the level 3 link color */
-#menuwrapper ul li:hover ul li:hover ul li a{
-    color:#ffffff;
-}
-
-/* Clear float */
-.clear{
-    clear:both;
-}
-
-#menuwrapper ul li.current_page_item a {
+#accordion li.current_page_item a {
     color: #8CC63F;
     font-weight: bold;
 }
@@ -425,8 +375,14 @@ a:hover {
     font-size: 18px;
     font-family: questrial, sans-serif;
     font-weight: 400;
-    margin-bottom: 0;
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-bottom: 0px;
     /*position: absolute;*/
+}
+
+.smooth_slider {
+    margin-bottom: 20px;
 }
 
 #linkSocialMedia {
@@ -465,7 +421,7 @@ a:hover {
 }
 
 #containerMenu {
-    max-width: 741px; /* 1004 */
+    max-width: 941px; /* 1004 */
     padding-left: 0px;
     padding-right: 0px;
     margin-left: auto;
@@ -480,8 +436,8 @@ a:hover {
 	z-index: 3;
     width: 241px;
     /*height: 724px;*/
-    min-height: 724px;
-    max-height: 924px;
+    min-height: 924px;
+    max-height: 1024px;
     position: relative;
     box-shadow: 5px 2px 6px rgba(127,127,127,0.5);
     border-color: #000000;

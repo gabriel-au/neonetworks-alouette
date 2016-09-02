@@ -2,16 +2,36 @@
 /* Template Name: Custom Template
 MultiEdit: MenuContent,Right,Bottom,Left
 */
-
-    header('X-Frame-Options: GOFORIT'); 
 ?>
-<!-- <html>
+<html>
 	<head>
-		<title>Allouette Child Care</title> -->
+		<title>Allouette Child Care</title>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
 		<?php wp_head(); ?>
-	<!-- </head>
-	<body> -->
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    $("li.page_item_has_children > a").attr('href', 'javascript:void(0);');
+			    $("li.page_item_has_children > a").attr('onClick', 'accordionMenu(this)');
+			});
+
+			$(function () {
+			    accordionMenu = function (elm) {
+			        // Now the object is $(elm)
+			        // $(elm).attr('style', 'background-color:#000');
+
+			        if(false == $(elm).next().is(':visible')) {
+						$('#accordion > ul').slideUp(300);
+					}
+					
+					$(elm).next().slideToggle(300);
+			    };
+			});
+		</script>
+	</head>
+	<body>
 		<!-- MAIN DIV START -->
 		<div>
 			<!-- CONTAINER SECTION - MAIN CONTENT START -->
@@ -69,8 +89,8 @@ MultiEdit: MenuContent,Right,Bottom,Left
 						<!-- MENU BAR LOGO END -->
 						<!-- MENU BAR LIST START -->
 						<div id="menuBarList">
-							<div id="menuwrapper">
-								<ul>
+							<div id="menu">
+								<ul id="accordion">
 									<!-- <li><a href="#" style="border-top: none;">HOME</a></li> -->
 									<?php wp_list_pages( '&title_li='); ?>
 									
