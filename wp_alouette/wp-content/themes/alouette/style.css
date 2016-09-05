@@ -621,6 +621,10 @@ div#menuBarContentBottom > div.ninja-forms-cont {
     margin-bottom: 10px;
 }
 
+div.smooth_slideri > h2 {
+    text-align: center;
+}
+
 #mainContentBody h2.ninja-forms-form-title {
     font-family: unset;
     font-size: 16px;

@@ -67,8 +67,8 @@ MultiEdit: MenuContent,Right,Bottom,Left
 						<!-- MENU BAR LOGO END -->
 						<!-- MENU BAR LIST START -->
 						<div id="menuBarList">
-							<div id="menuwrapper">
-								<ul>
+							<div id="menu">
+								<ul id="accordion">
 									<!-- <li><a href="#" style="border-top: none;">HOME</a></li> -->
 									<?php wp_list_pages( '&title_li='); ?>
 									
