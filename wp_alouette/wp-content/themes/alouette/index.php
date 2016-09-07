@@ -5,7 +5,7 @@ MultiEdit: MenuContent,Right,Bottom,Left
 ?>
 <!-- <html>
 	<head>
-		<title>Allouette Child Care</title> -->
+		<title>Alouette Child Care</title> -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
 		<?php wp_head(); ?>
 	<!-- </head>

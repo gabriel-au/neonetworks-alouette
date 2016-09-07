@@ -5,7 +5,7 @@ MultiEdit: MenuContent,Right,Bottom,Left
 ?>
 <html>
 	<head>
-		<title>Allouette Child Care</title>
+		<title>Alouette Child Care</title>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		
